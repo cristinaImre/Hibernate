@@ -31,6 +31,7 @@
         <!-- Mention here all the model classes -->
         <mapping class="cimre.OneToManyAJ.persistence.model.User"/>
         <mapping class="cimre.OneToManyAJ.persistence.model.Product"/>
+        <mapping class="cimre.OneToManyAJ.persistence.model.Stock"/>
     
     </session-factory>
 </hibernate-configuration>

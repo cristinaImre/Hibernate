@@ -18,12 +18,11 @@ import javax.persistence.Table;
 public class User {
 
 	@Id
-//	@Column(name = "userId")
-//	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "userId")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int userId;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	//@ElementCollection(targetClass=Role.class)
 	@Column(name = "productId")
 	private Set<Product> products = new HashSet<Product>(0);
 
